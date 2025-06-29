@@ -42,14 +42,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Психологический тест для определения черт личности">
+    <meta name="keywords" content="психология, тест, черты личности, кластеры">
     <title>Психологический тест</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Психологический тест</h1>
-        <div id="question-container"></div>
-        <button id="submit-btn" onclick="submitAnswers()">Отправить</button>
+        <form id="test-form" action="results.html">
+            <div id="question-container"></div>
+            <button type="submit" id="submit-btn" onclick="submitAnswers()">Отправить</button>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
